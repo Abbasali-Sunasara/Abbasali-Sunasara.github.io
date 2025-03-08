@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abbas Ali - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="profile">
+        <img src="./pfp.jpeg" alt="Profile photo of Abbas Ali." class="profile-photo" />
+      </div>
+      <div class="header-text">
+        
+        
+          <h1 class="animated-name">Abbas Ali</h1>
+          <p>Aspiring Backend Developer | Master of Computer Applications | Future
+          Full Stack Development Enthusiast
+        </p>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="./Abbasali resume.pdf" class="download-btn" download>Download Resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <h3>
+        <p>
+          As a backend development enthusiast with hands-on experience from a
+          five-month internship at Craloft, I applied my skills in Node.js,
+          Python, JavaScript, Git, and GitLab to streamline project workflows
+          and enhance team collaboration. My academic journey, with a BCA from
+          Maktabah Jafariyah and ongoing MCA studies at Alliance University,
+          equips me with a strong blend of theoretical foundations and practical
+          exposure. I specialize in efficient code development, version control,
+          and crafting maintainable, high-performance backend solutions. With a
+          passion for leveraging technology to solve complex challenges, I am
+          continuously advancing my backend expertise while also preparing to
+          expand into full-stack development. Additionally, I am keen on
+          exploring data science and machine learning as future areas of focus.
+        </p>
+      </h3>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Java</div>
+        <div class="skill">Git</div>
+        <div class="skill">C</div>
+        <div class="skill">ASP .NET</div>
+      </div>
+
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Library Management System</h3>
+          <p>
+            A web application to manage library resources, track book issues,
+            returns, and due dates with ease.
+          </p>
+          <a
+            href="https://github.com/Abbasali-Sunasara/projects/tree/main/Library%20Management"
+            class="btn"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+        <div class="project">
+          <h3>Weather App</h3>
+          <p>
+            A real-time weather app providing current conditions and forecasts
+            based on user location.
+          </p>
+          <a
+            href="https://github.com/Abbasali-Sunasara/projects/tree/main/weather%20app"
+            class="btn"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>2021 - 2024</p>
+          <p>
+            Maktabah jafariyah<br><p>Sedrana, Gujarat, 384151</p>
+          </p>
+        </div>
+        <div class="project">
+          <h3>Master of Computer Applications (MCA)</h3>
+          <p>2024 - 2026</p>
+          <p>
+           Alliance University<br>
+            <p>Bangaluru, karnataka, 562106</p>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: abbasalisunasara1234@gmail.com</p>
+     
+    
+    	<div class="icons1">	
+        <div class="social-icons"><a href="https://www.linkedin.com/in/abbasali-sunasara-492300293/"><img src="https://www.vikingcamps.com/wp-content/uploads/2024/01/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="">
+        </a>
+      </div>
+      <div class="social-icons"><a href="https://github.com/Abbasali-Sunasara?tab=repositories"><img src="https://img.icons8.com/m_sharp/200/FFFFFF/github.png" alt="">
+      </a>
+    </div>
+    </div>
+    
+    
+    
+    </section>
+
+    
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        padding: 5px; /* Reduced padding to decrease navbar height */
+        background: #1e1e1e;
+        color: #e0e0e0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .profile {
+        margin-right: 20px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        border: 2px solid #e0e0e0;
+        object-fit: cover;
+        transition: transform 0.3s;
+      }
+
+      .profile-photo:hover {
+        transform: scale(1.05);
+      }
+
+      .header-text h1 {
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
+
+      .header-text p {
+        font-size: 1.2rem;
+        color: #bbb;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        display: inline;
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #bb86fc;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #3700b3;
+      }
+
+      
+nav ul li a.download-btn {
+  padding: 5px -2px;
+   border-radius: 5px;
+  margin-left: 10px;
+ 
+}
+
+
+ section {
+        padding: 40px;
+        margin: 20px auto;
+        background: #1e1e1e;
+        border-radius: 8px;
+        max-width: 1000px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+      }
+
+      h2 {
+        color: #bb86fc;
+        font-size: 2rem;
+        position: relative;
+      }
+
+      h2::after {
+        content: "";
+        display: block;
+        height: 3px;
+        width: 50px;
+        background: #3700b3;
+        margin: 10px 0;
+      }
+
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .skill {
+        background: #292929;
+        margin: 5px;
+        padding: 15px;
+        border-radius: 5px;
+        color: #e0e0e0;
+        flex: 1 1 30%;
+        text-align: center;
+        transition: transform 0.3s, background 0.3s;
+      }
+
+      .skill:hover {
+        background: #bb86fc;
+        color: #fff;
+        transform: scale(1.05);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .project {
+        background: #1e1e1e;
+        border: 1px solid #444;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .project:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .project h3 {
+        color: #bb86fc;
+      }
+
+      .btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background: #bb86fc;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background: #3700b3;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #1e1e1e;
+        color: #bbb;
+      }
+    
+    
+      .social-icons img {
+            width: 45px;
+            height: 45px;
+            
+        }
+    
+        .icons1{
+	display: flex;
+     
+}
+
+ @keyframes typing {
+  0% {
+    width: 0;
+  }
+  90% {
+    width: 22%;
+  }
+  100% {
+    width: 22%; /* Pause here at the end of typing */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.animated-name {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #bb86fc; /* The cursor effect */
+  animation: typing 3s steps(15) 0.8s infinite alternate, blink 1s step-end infinite;
+  position: relative;
+  width: max-content; /* This will make the width adjust based on the content */
+  animation-delay: 2s;
+   
+}
+
+
+
+@media (max-width: 768px) {
+  header, .header-text h1, .header-text p {
+    text-align: center;
+  }
+}
+
+    </style>
+  </body>
+</html>
