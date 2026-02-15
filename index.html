@@ -1,412 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abbas Ali - Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <div class="profile">
-        <img src="./pro_profile.jpeg" alt="Profile photo of Abbas Ali." class="profile-photo" />
-      </div>
-      <div class="header-text">
-        
-        
-          <h1 class="animated-name">Abbas Ali</h1>
-          <p>Aspiring Data Scientist | Machine Learning & AI Enthusiast | MCA Student | Exploring Deep Learning & Data Analytics
-        </p>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="./Abbasali resume.pdf" class="download-btn" download>Download Resume</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abbas Ali - Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+</head>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <h3>
-        <p>
-         I am a Data Science and Machine Learning enthusiast with hands-on experience from a 
-         five-month internship at Craloft, where I worked on data-driven workflows, automation,
-          and analysis using Python, JavaScript, Node.js, n8n, Git, and GitLab.
-           I hold a BCA and am currently pursuing an MCA in Data Science at Alliance University, 
-           building a strong foundation in statistics, data analysis, and machine learning.
-            My interests lie in data cleaning, feature engineering, exploratory data analysis, 
-            and core ML techniques such as regression, classification, and clustering. 
-            I enjoy transforming raw data into meaningful insights and continuously work toward 
-            building intelligent,scalable, and practical data solutions through real-world projects
-             and collaborative environments.
-        </p>
-      </h3>
-    </section>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </nav>
 
-    <section id="skills">
-  <h2>Skills</h2>
-  <div class="skills-container">
-    <div class="skill">Python</div>
-    <div class="skill">SQL</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">HTML & CSS</div>
-    <div class="skill">Node.js</div>
-    <div class="skill">Java</div>
-    <div class="skill">C</div>
-    <div class="skill">ASP .NET</div>
-
-    <!-- Data Science & ML -->
-    <div class="skill">Pandas</div>
-    <div class="skill">NumPy</div>
-    <div class="skill">Matplotlib</div>
-    <div class="skill">Data Analysis</div>
-    <div class="skill">Data Cleaning</div>
-    <div class="skill">Feature Engineering</div>
-    <div class="skill">Machine Learning</div>
-
-    <!-- Tools -->
-    <div class="skill">Jupyter Notebook</div>
-    <div class="skill">Streamlit</div>
-    <div class="skill">Git</div>
-    <div class="skill">GitHub</div>
-    <div class="skill">GitLab</div>
-    <div class="skill">n8n</div>
+  <!-- Floating Geometric Shapes -->
+  <div class="geometric-shapes">
+    <div class="shape circle" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+    <div class="shape square" style="top: 60%; left: 85%; animation-delay: 3s;"></div>
+    <div class="shape triangle" style="top: 40%; left: 10%; animation-delay: 6s;"></div>
+    <div class="shape circle" style="top: 80%; left: 70%; animation-delay: 2s;"></div>
+    <div class="shape square" style="top: 20%; left: 90%; animation-delay: 5s;"></div>
   </div>
-</section>
+  
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress"></div>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-layout">
+        <!-- Main content (centered) -->
+        <div class="hero-content animate-fade-in">
+          <h1>Hi, I'm <span class="highlight" data-text="Abbas Ali">Abbas Ali</span></h1>
+          <div class="typing-container">
+            <span class="typing-text">Aspiring Data Scientist & MLE</span>
+          </div>
+          <p class="subtitle animate-fade-in delay-1">
+            Explaining Deep Learning & Data Analytics | Transforming raw data into meaningful insights.
+          </p>
+          <div class="cta-buttons animate-fade-in delay-2">
+            <a href="#projects" class="btn-primary">View My Work</a>
+            <a href="./Abbasali resume.pdf" class="btn-primary btn-secondary" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="projects">
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container animate-fade-in delay-3">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-photo">
+          <img src="./pro_profile.jpeg" alt="Abbas Ali" class="profile-img" />
+        </div>
+        <div class="about-text">
+          <p>
+            I am a Data Science and Machine Learning enthusiast with hands-on experience from a
+            five-month internship at Craloft, where I worked on data-driven workflows, automation,
+            and analysis using Python, JavaScript, Node.js, n8n, Git, and GitLab.
+          </p>
+          <p>
+            I hold a BCA and am currently pursuing an MCA in Data Science at Alliance University,
+            building a strong foundation in statistics, data analysis, and machine learning.
+            My interests lie in data cleaning, feature engineering, exploratory data analysis,
+            and core ML techniques such as regression, classification, and clustering.
+          </p>
+          <p>
+            I enjoy transforming raw data into meaningful insights and continuously work toward
+            building intelligent, scalable, and practical data solutions through real-world projects
+            and collaborative environments.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <p class="skills-subtitle">Technologies I work with</p>
+      
+      <div class="skills-grid">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">SQL</div>
+        <div class="skill-tag">JavaScript</div>
+        <div class="skill-tag">HTML & CSS</div>
+        <div class="skill-tag">Node.js</div>
+        <div class="skill-tag">Java</div>
+        <div class="skill-tag">C</div>
+        <div class="skill-tag">ASP .NET</div>
+        <div class="skill-tag">Pandas</div>
+        <div class="skill-tag">NumPy</div>
+        <div class="skill-tag">Matplotlib</div>
+        <div class="skill-tag">Data Analysis</div>
+        <div class="skill-tag">Data Cleaning</div>
+        <div class="skill-tag">Feature Engineering</div>
+        <div class="skill-tag">Machine Learning</div>
+        <div class="skill-tag">Jupyter Notebook</div>
+        <div class="skill-tag">Streamlit</div>
+        <div class="skill-tag">Git</div>
+        <div class="skill-tag">GitHub</div>
+        <div class="skill-tag">GitLab</div>
+        <div class="skill-tag">n8n</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <div class="project">
-          <h3>Library Management System</h3>
-          <p>
-            A web application to manage library resources, track book issues,
-            returns, and due dates with ease.
-          </p>
-          <a
-            href="https://github.com/Abbasali-Sunasara/Library-Management.git"
-            class="btn"
-            target="_blank"
-            >View Project</a
-          >
+        <div class="project-card">
+          <div>
+            <h3>Library Management System</h3>
+            <p>
+              A web application to manage library resources, track book issues,
+              returns, and due dates with ease.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">ASP.NET</span>
+              <span class="tech-badge">C#</span>
+              <span class="tech-badge">SQL</span>
+            </div>
+          </div>
+          <a href="https://github.com/Abbasali-Sunasara/Library-Management.git" class="project-link"
+            target="_blank">View Project &rarr;</a>
         </div>
-        <div class="project">
-          <h3>Weather App</h3>
-          <p>
-            A real-time weather app providing current conditions and forecasts
-            based on user location.
-          </p>
-          <a
-            href="https://github.com/Abbasali-Sunasara/Weather-App.git"
-            class="btn"
-            target="_blank"
-            >View Project</a
-          >
+
+        <div class="project-card">
+          <div>
+            <h3>Weather App</h3>
+            <p>
+              A real-time weather app providing current conditions and forecasts
+              based on user location.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">API</span>
+            </div>
+          </div>
+          <a href="https://github.com/Abbasali-Sunasara/Weather-App.git" class="project-link" target="_blank">View
+            Project &rarr;</a>
         </div>
-        <div class="project">
-          <h3>Synthetic Data Generator for Privacy</h3>
-          <p>
-            Interactive Streamlit app to generate synthetic datasets for privacy-preserving analytics.Automatically detects columns to synthesize, supports multiple models (GaussianCopula, CTGAN, TVAE), 
-            and provides visual comparisons and correlation heatmaps. 
-            Users can download datasets in CSV for analysis or AI/ML tasks.
-          </p>
-          <a
-            href="https://github.com/Abbasali-Sunasara/Synthetic-DataGen.git"
-            class="btn"
-            target="_blank"
-            >View Project</a
-          >
+
+        <div class="project-card">
+          <div>
+            <h3>Synthetic Data Generator</h3>
+            <p>
+              Interactive Streamlit app to generate synthetic datasets for privacy-preserving analytics.
+              Automatically detects columns to synthesize, supports multiple models (GaussianCopula, CTGAN, TVAE),
+              and provides visual comparisons.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Streamlit</span>
+              <span class="tech-badge">SDV</span>
+              <span class="tech-badge">Pandas</span>
+            </div>
+          </div>
+          <a href="https://github.com/Abbasali-Sunasara/Synthetic-DataGen.git" class="project-link" target="_blank">View
+            Project &rarr;</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="education">
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
       <h2>Education</h2>
-      <div class="projects-grid">
-        <div class="project">
-          <h3>Bachelor of Computer Applications (BCA)</h3>
-          <p>2021 - 2024</p>
-          <p>
-            Maktabah jafariyah<br><p>Sedrana, Gujarat, 384151</p>
-          </p>
+      <div class="education-card">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <div class="education-meta">2024 - 2026 | Alliance University, Bengaluru</div>
+        <p>Specialization in Data Science.</p>
+      </div>
+
+      <div class="education-card">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <div class="education-meta">2021 - 2024 | Maktabah Jafariyah, Gujarat</div>
+        <p>Graduated with strong fundamentals in computer science.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p class="contact-subtitle">Have a project in mind or just want to chat about data science?<br>I'd love to hear from you!</p>
+      
+      <div class="contact-grid">
+        <!-- Main CTA Card -->
+        <div class="contact-main-card">
+          <div class="contact-icon-wrapper">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="icon-glow"></div>
+          </div>
+          <h3>Ready to collaborate?</h3>
+          <p>Let's discuss data science, machine learning, or potential projects. I'm always excited to connect with fellow tech enthusiasts!</p>
+          <a href="mailto:abbasalisunasara1234@gmail.com" class="contact-email-btn">
+            <span>Send me an email</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
         </div>
-        <div class="project">
-          <h3>Master of Computer Applications (MCA)</h3>
-          <p>2024 - 2026</p>
-          <p>
-           Alliance University<br>
-            <p>Bangaluru, karnataka, 562106</p>
-          </p>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info-cards">
+          <!-- Email Card -->
+          <div class="contact-info-card">
+            <div class="info-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <h4>Email</h4>
+              <a href="mailto:abbasalisunasara1234@gmail.com">abbasalisunasara1234@gmail.com</a>
+            </div>
+            <div class="card-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="contact-info-card">
+            <div class="info-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/abbasali-sunasara-492300293/" target="_blank">Connect with me</a>
+            </div>
+            <div class="card-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="contact-info-card">
+            <div class="info-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </div>
+            <div class="info-card-content">
+              <h4>GitHub</h4>
+              <a href="https://github.com/Abbasali-Sunasara?tab=repositories" target="_blank">View my repos</a>
+            </div>
+            <div class="card-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: abbasalisunasara1234@gmail.com</p>
-     
-    
-    	<div class="icons1">	
-        <div class="social-icons"><a href="https://www.linkedin.com/in/abbasali-sunasara-492300293/"><img src="https://www.vikingcamps.com/wp-content/uploads/2024/01/linkedin-logo-linkedin-icon-transparent-free-png.webp" alt="">
-        </a>
-      </div>
-      <div class="social-icons"><a href="https://github.com/Abbasali-Sunasara?tab=repositories"><img src="https://img.icons8.com/m_sharp/200/FFFFFF/github.png" alt="">
-      </a>
     </div>
-    </div>
-    
-    
-    
-    </section>
+  </section>
 
-    
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
-    <style>
-      * {
-        box-sizing: border-box;
-      }
+  <!-- Enhanced JS for Scroll Reveal with Stagger Effects -->
+  <script>
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+          
+          // Stagger skill tags animation
+          if (entry.target.classList.contains('skills-grid')) {
+            const skillTags = entry.target.querySelectorAll('.skill-tag');
+            skillTags.forEach((tag, index) => {
+              setTimeout(() => {
+                tag.style.opacity = '1';
+                tag.style.transform = 'translateY(0)';
+              }, index * 50); // 50ms delay between each tag
+            });
+          }
 
-      body {
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #121212;
-        color: #e0e0e0;
-      }
-
-      header {
-        display: flex;
-        align-items: center;
-        padding: 5px; /* Reduced padding to decrease navbar height */
-        background: #1e1e1e;
-        color: #e0e0e0;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-      }
-
-      
-      
-      .profile {
-        margin-right: 20px;
-        flex-shrink: 0;
-      }
-
-      
-
-      .profile-photo {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        border: 2px solid #e0e0e0;
-        object-fit: cover;
-        transition: transform 0.3s;
-      }
-
-      .profile-photo:hover {
-        transform: scale(1.05);
-      }
-
-      .header-text h1 {
-        font-weight: 700;
-        font-size: 2.5rem;
-      }
-
-      .header-text p {
-        font-size: 1.2rem;
-        color: #bbb;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
-      }
-
-      nav ul li {
-        display: inline;
-        margin: 0 15px;
-      }
-
-      nav ul li a {
-        color: #bb86fc;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s;
-      }
-
-      nav ul li a:hover {
-        color: #3700b3;
-      }
-
-      
-nav ul li a.download-btn {
-  padding: 5px -2px;
-   border-radius: 5px;
-  margin-left: 10px;
- 
-}
-
-
- section {
-        padding: 40px;
-        margin: 20px auto;
-        background: #1e1e1e;
-        border-radius: 8px;
-        max-width: 1000px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-
-      section:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-      }
-
-      h2 {
-        color: #bb86fc;
-        font-size: 2rem;
-        position: relative;
-      }
-
-      h2::after {
-        content: "";
-        display: block;
-        height: 3px;
-        width: 50px;
-        background: #3700b3;
-        margin: 10px 0;
-      }
-
-      .skills-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .skill {
-        background: #292929;
-        margin: 5px;
-        padding: 15px;
-        border-radius: 5px;
-        color: #e0e0e0;
-        flex: 1 1 30%;
-        text-align: center;
-        transition: transform 0.3s, background 0.3s;
-      }
-
-      .skill:hover {
-        background: #bb86fc;
-        color: #fff;
-        transform: scale(1.05);
-      }
-
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-      }
-
-      .project {
-        background: #1e1e1e;
-        border: 1px solid #444;
-        border-radius: 15px;
-        padding: 15px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-
-      .project:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-      }
-
-      .project h3 {
-        color: #bb86fc;
-      }
-
-      .btn {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 10px 15px;
-        background: #bb86fc;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background 0.3s;
-      }
-
-      .btn:hover {
-        background: #3700b3;
-      }
-
-      footer {
-        text-align: center;
-        padding: 20px;
-        background: #1e1e1e;
-        color: #bbb;
-      }
-    
-    
-      .social-icons img {
-            width: 45px;
-            height: 45px;
-            
+          // Stagger project cards
+          if (entry.target.classList.contains('projects-grid')) {
+            const cards = entry.target.querySelectorAll('.project-card');
+            cards.forEach((card, index) => {
+              setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+              }, index * 150);
+            });
+          }
         }
-    
-        .icons1{
-	display: flex;
-     
-}
+      });
+    }, { threshold: 0.1 });
 
- @keyframes typing {
-  0% {
-    width: 0;
-  }
-  90% {
-    width: 22%;
-  }
-  100% {
-    width: 22%; /* Pause here at the end of typing */
-  }
-}
+    // Observe sections and cards
+    document.querySelectorAll('section, .project-card, .education-card, .skills-grid, .projects-grid').forEach((el) => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
 
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
+    // Initialize skill tags with hidden state
+    document.querySelectorAll('.skill-tag').forEach(tag => {
+      tag.style.opacity = '0';
+      tag.style.transform = 'translateY(20px)';
+      tag.style.transition = 'all 0.5s ease';
+    });
 
-.animated-name {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid #bb86fc; /* The cursor effect */
-  animation: typing 3s steps(15) 0.8s infinite alternate, blink 1s step-end infinite;
-  position: relative;
-  width: max-content; /* This will make the width adjust based on the content */
-  animation-delay: 2s;
-  margin-top: 10px; 
-   
-}
+    // Initialize project cards with hidden state
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(30px)';
+      card.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+    });
 
+    // Add smooth scroll behavior to nav links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
 
+    // Scroll progress indicator
+    const scrollProgress = document.querySelector('.scroll-progress');
+    window.addEventListener('scroll', () => {
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (window.scrollY / windowHeight) * 100;
+      scrollProgress.style.width = scrolled + '%';
+    });
 
-@media (max-width: 768px) {
-  header, .header-text h1, .header-text p {
-    text-align: center;
-  }
-}
+    // Back to top button
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    });
 
-    </style>
-  </body>
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    // Parallax effect for geometric shapes
+    document.addEventListener('mousemove', (e) => {
+      const shapes = document.querySelectorAll('.shape');
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+
+      shapes.forEach((shape, index) => {
+        const speed = (index + 1) * 20;
+        const moveX = (x - 0.5) * speed;
+        const moveY = (y - 0.5) * speed;
+        shape.style.transform = `translate(${moveX}px, ${moveY}px) rotate(${moveX}deg)`;
+      });
+    });
+
+    // Add typing cursor blink
+    const typingText = document.querySelector('.typing-text');
+    if (typingText) {
+      setTimeout(() => {
+        typingText.style.borderRight = 'none';
+      }, 3500);
+    }
+  </script>
+</body>
+
 </html>
