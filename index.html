@@ -52,12 +52,32 @@
           </p>
           <div class="cta-buttons animate-fade-in delay-2">
             <a href="#projects" class="btn-primary">View My Work</a>
+            <button type="button" class="btn-primary btn-secondary" id="viewResumeBtn">View Resume</button>
             <a href="./Abbasali resume.pdf" class="btn-primary btn-secondary" download>Download Resume</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Resume Viewer Modal -->
+  <div class="resume-modal" id="resumeModal" aria-hidden="true">
+    <div class="resume-modal-backdrop" id="resumeModalBackdrop"></div>
+    <div class="resume-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+      <button type="button" class="resume-modal-close" id="closeResumeModal" aria-label="Close resume viewer">&times;</button>
+      <div class="resume-modal-header">
+        <h2 id="resumeModalTitle">Resume Preview</h2>
+        <p>Scroll through the resume below or close it anytime.</p>
+      </div>
+      <div class="resume-modal-body">
+        <iframe
+          class="resume-frame"
+          src="./Abbasali resume.pdf#view=FitH"
+          title="Abbas Ali Resume"
+        ></iframe>
+      </div>
+    </div>
+  </div>
 
   <!-- About Section -->
   <section id="about" class="section">
@@ -428,6 +448,36 @@
         top: 0,
         behavior: 'smooth'
       });
+    });
+
+    // Resume modal controls
+    const viewResumeBtn = document.getElementById('viewResumeBtn');
+    const resumeModal = document.getElementById('resumeModal');
+    const resumeBackdrop = document.getElementById('resumeModalBackdrop');
+    const closeResumeModalBtn = document.getElementById('closeResumeModal');
+
+    const openResumeModal = () => {
+      resumeModal.classList.add('open');
+      resumeModal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      closeResumeModalBtn.focus();
+    };
+
+    const closeResumeModal = () => {
+      resumeModal.classList.remove('open');
+      resumeModal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+      viewResumeBtn.focus();
+    };
+
+    viewResumeBtn.addEventListener('click', openResumeModal);
+    closeResumeModalBtn.addEventListener('click', closeResumeModal);
+    resumeBackdrop.addEventListener('click', closeResumeModal);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && resumeModal.classList.contains('open')) {
+        closeResumeModal();
+      }
     });
 
     // Parallax effect for geometric shapes
