@@ -1468,3 +1468,194 @@ footer {
         padding: 0.5rem 0.9rem;
     }
 }
+
+/* Mobile layout refinements. These rules only affect tablet and phone widths. */
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 5rem;
+    }
+
+    .container {
+        padding-right: 1.25rem;
+        padding-left: 1.25rem;
+    }
+
+    .navbar {
+        padding: 0.55rem 0;
+        background: rgba(10, 10, 10, 0.92);
+    }
+
+    .nav-container {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        gap: 0.25rem;
+        padding: 0 0.75rem;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        scrollbar-width: none;
+    }
+
+    .nav-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-link {
+        flex: 0 0 auto;
+        padding: 0.45rem 0.7rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        min-height: 100svh;
+        padding: 7rem 0 3rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+        overflow-wrap: anywhere;
+    }
+
+    .typing-container {
+        min-height: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    .typing-text {
+        display: inline;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        border-right: 0;
+        animation: none;
+        font-size: clamp(0.95rem, 4vw, 1.2rem);
+    }
+
+    .hero .subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .cta-buttons {
+        gap: 0.75rem;
+    }
+
+    .cta-buttons .btn-primary {
+        flex: 1 1 100%;
+        max-width: 22rem;
+    }
+
+    .section,
+    #about,
+    #skills,
+    .contact-section {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-content {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .about-photo .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .projects-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+
+    .project-card {
+        min-width: 0;
+        padding: 1.4rem;
+    }
+
+    .project-link {
+        max-width: 100%;
+        padding: 0.7rem 1rem;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+    }
+
+    .education-card {
+        padding: 1.4rem;
+    }
+
+    .education-card:hover,
+    .contact-info-card:hover {
+        transform: none;
+    }
+
+    .contact-grid {
+        gap: 1.25rem;
+        margin-top: 2rem;
+    }
+
+    .contact-main-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .contact-info-cards {
+        gap: 0.85rem;
+    }
+
+    .contact-info-card {
+        min-width: 0;
+        gap: 0.85rem;
+        padding: 1rem;
+    }
+
+    .info-card-content {
+        min-width: 0;
+    }
+
+    .info-card-content span {
+        display: block;
+        overflow-wrap: anywhere;
+        font-size: 0.9rem;
+    }
+
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
+        width: 46px;
+        height: 46px;
+    }
+}
+
+@media (max-width: 420px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .skill-tag {
+        padding: 0.45rem 0.7rem;
+        font-size: 0.75rem;
+    }
+
+    .contact-email-btn {
+        max-width: 100%;
+        padding: 0.85rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-info-card {
+        gap: 0.65rem;
+        padding: 0.85rem;
+    }
+
+    .info-card-icon {
+        width: 44px;
+        height: 44px;
+    }
+}
