@@ -145,9 +145,21 @@ ul {
     list-style: none;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+/* Skip to content link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--accent-primary);
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 10000;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 /* Typography */
@@ -611,10 +623,11 @@ body.modal-open {
     display: block;
     margin-bottom: 1.5rem;
     min-height: 40px;
+    width: 100%;
 }
 
 .typing-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--accent-secondary);
     font-weight: 600;
     border-right: 3px solid var(--accent-secondary);
@@ -622,9 +635,8 @@ body.modal-open {
     overflow: hidden;
     animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
     font-family: monospace;
-    /* Monospace usually looks better for typing effects */
-    font-size: 1.2rem;
-    color: var(--accent-secondary);
+    display: inline-block;
+    max-width: 100%;
 }
 
 
@@ -1363,7 +1375,6 @@ footer {
     transform: translateY(-2px) scale(1.05);
 }
 
-/* Reduce/disable motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
     .shape,
     .contact-icon,
@@ -1372,7 +1383,9 @@ footer {
     .contact-main-card,
     .geometric-shapes,
     .profile-img,
-    .contact-email-btn {
+    .contact-email-btn,
+    .typing-text,
+    .animate-fade-in {
         animation: none !important;
         transition: none !important;
     }
@@ -1380,12 +1393,53 @@ footer {
     .shape {
         opacity: 0.01 !important;
     }
+    
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .typing-text {
+        border-right: none !important;
+        width: auto !important;
+        animation: none !important;
+    }
 }
 
 /* Responsive Design */
+@media (max-width: 480px) {
+    .typing-text {
+        font-size: 0.75rem;
+    }
+    .nav-container {
+        gap: 0.8rem;
+    }
+    .nav-link {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cta-buttons .btn-primary {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
 @media (max-width: 768px) {
     .geometric-shapes {
         display: none;
+    }
+    
+    .typing-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .typing-text {
+        font-size: 0.9rem;
+        white-space: nowrap;
     }
     
     h1 {
