@@ -36,28 +36,6 @@
     </div>
   </div>
 
-  <!-- Custom Cursor -->
-  <div class="custom-cursor" id="customCursor"></div>
-  <div class="cursor-trail" id="cursorTrail"></div>
-
-  <!-- Theme Toggle -->
-  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <circle cx="12" cy="12" r="5"></circle>
-      <line x1="12" y1="1" x2="12" y2="3"></line>
-      <line x1="12" y1="21" x2="12" y2="23"></line>
-      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-      <line x1="1" y1="12" x2="3" y2="12"></line>
-      <line x1="21" y1="12" x2="23" y2="12"></line>
-      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-    </svg>
-    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-    </svg>
-  </button>
-
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <!-- Navigation Bar -->
   <nav class="navbar">
@@ -67,19 +45,6 @@
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#education" class="nav-link">Education</a>
       <a href="#contact" class="nav-link">Contact</a>
-      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about" class="mobile-nav-link">About</a>
-      <a href="#skills" class="mobile-nav-link">Skills</a>
-      <a href="#projects" class="mobile-nav-link">Projects</a>
-      <a href="#education" class="mobile-nav-link">Education</a>
-      <a href="#contact" class="mobile-nav-link">Contact</a>
     </div>
   </nav>
 
@@ -113,30 +78,6 @@
             <a href="#projects" class="btn-primary magnetic-btn">View My Work</a>
             <button type="button" class="btn-primary btn-secondary magnetic-btn" id="viewResumeBtn">View Resume</button>
             <a href="./Abbasali-Resume.pdf" class="btn-primary btn-secondary magnetic-btn" download>Download Resume</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Stats Section -->
-    <div class="stats-section">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <div class="stat-number" data-target="5">0</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="21">0</div>
-            <div class="stat-label">Technologies</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="2">0</div>
-            <div class="stat-label">Years Exp</div>
-          </div>
-          <div class="stat-item">
-            <div class="stat-number" data-target="9">0</div>
-            <div class="stat-label">CGPA</div>
           </div>
         </div>
       </div>
@@ -505,69 +446,6 @@
       }, 1500);
     });
 
-    // Custom Cursor
-    const customCursor = document.getElementById('customCursor');
-    const cursorTrail = document.getElementById('cursorTrail');
-    let mouseX = 0, mouseY = 0;
-    let cursorX = 0, cursorY = 0;
-    let trailX = 0, trailY = 0;
-
-    document.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
-
-    function animateCursor() {
-      cursorX += (mouseX - cursorX) * 0.15;
-      cursorY += (mouseY - cursorY) * 0.15;
-      trailX += (mouseX - trailX) * 0.08;
-      trailY += (mouseY - trailY) * 0.08;
-
-      customCursor.style.left = cursorX - 10 + 'px';
-      customCursor.style.top = cursorY - 10 + 'px';
-      cursorTrail.style.left = trailX - 4 + 'px';
-      cursorTrail.style.top = trailY - 4 + 'px';
-
-      requestAnimationFrame(animateCursor);
-    }
-    animateCursor();
-
-    // Cursor hover effects
-    document.querySelectorAll('a, button, .project-card, .skill-tag').forEach(el => {
-      el.addEventListener('mouseenter', () => customCursor.classList.add('active'));
-      el.addEventListener('mouseleave', () => customCursor.classList.remove('active'));
-    });
-
-    // Theme Toggle
-    const themeToggle = document.getElementById('themeToggle');
-    const savedTheme = localStorage.getItem('theme');
-
-    if (savedTheme === 'light') {
-      document.body.classList.add('light-mode');
-    }
-
-    themeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('light-mode');
-      const isLight = document.body.classList.contains('light-mode');
-      localStorage.setItem('theme', isLight ? 'light' : 'dark');
-    });
-
-    // Mobile Menu
-    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    mobileMenuToggle.addEventListener('click', () => {
-      mobileMenuToggle.classList.toggle('active');
-      mobileMenu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.mobile-nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuToggle.classList.remove('active');
-        mobileMenu.classList.remove('active');
-      });
-    });
-
     // Time-based Greeting
     function setGreeting() {
       const hour = new Date().getHours();
@@ -583,44 +461,6 @@
       greetingText.textContent = greeting;
     }
     setGreeting();
-
-    // Animated Counters
-    function animateCounters() {
-      const counters = document.querySelectorAll('.stat-number');
-      counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const duration = 2000;
-        const step = target / (duration / 16);
-        let current = 0;
-
-        const updateCounter = () => {
-          current += step;
-          if (current < target) {
-            counter.textContent = Math.floor(current);
-            requestAnimationFrame(updateCounter);
-          } else {
-            counter.textContent = target;
-          }
-        };
-
-        updateCounter();
-      });
-    }
-
-    // Trigger counter animation when stats section is visible
-    const statsSection = document.querySelector('.stats-section');
-    const statsObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounters();
-          statsObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-
-    if (statsSection) {
-      statsObserver.observe(statsSection);
-    }
 
     // 3D Tilt Effect on Cards
     document.querySelectorAll('.project-card').forEach(card => {
