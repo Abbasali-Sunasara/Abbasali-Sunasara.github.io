@@ -21,6 +21,43 @@
 </head>
 
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen" id="loadingScreen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <div class="loading-text">AA</div>
+        <div class="loading-bar"></div>
+      </div>
+      <div class="loading-dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+  </button>
+
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <!-- Navigation Bar -->
   <nav class="navbar">
@@ -30,6 +67,19 @@
       <a href="#projects" class="nav-link">Projects</a>
       <a href="#education" class="nav-link">Education</a>
       <a href="#contact" class="nav-link">Contact</a>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#skills" class="mobile-nav-link">Skills</a>
+      <a href="#projects" class="mobile-nav-link">Projects</a>
+      <a href="#education" class="mobile-nav-link">Education</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
     </div>
   </nav>
 
@@ -51,6 +101,7 @@
       <div class="hero-layout">
         <!-- Main content (centered) -->
           <div class="hero-content animate-fade-in">
+          <p class="greeting" id="greetingText">Good Morning</p>
           <h1>Hi, I'm <span class="highlight" data-text="Abbas Ali">Abbas Ali</span></h1>
           <div class="typing-container">
             <span class="typing-text">Aspiring Data Scientist • Python Developer • MLE</span>
@@ -59,9 +110,33 @@
             Data science, Python development, backend & full-stack engineering — transforming data into actionable insights.
           </p>
           <div class="cta-buttons animate-fade-in delay-2">
-            <a href="#projects" class="btn-primary">View My Work</a>
-            <button type="button" class="btn-primary btn-secondary" id="viewResumeBtn">View Resume</button>
-            <a href="./Abbasali-Resume.pdf" class="btn-primary btn-secondary" download>Download Resume</a>
+            <a href="#projects" class="btn-primary magnetic-btn">View My Work</a>
+            <button type="button" class="btn-primary btn-secondary magnetic-btn" id="viewResumeBtn">View Resume</button>
+            <a href="./Abbasali-Resume.pdf" class="btn-primary btn-secondary magnetic-btn" download>Download Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="21">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Years Exp</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="9">0</div>
+            <div class="stat-label">CGPA</div>
           </div>
         </div>
       </div>
@@ -128,29 +203,52 @@
     <div class="container">
       <h2>Skills & Technologies</h2>
       <p class="skills-subtitle">Technologies I work with</p>
-      
-      <div class="skills-grid">
-        <div class="skill-tag">Python</div>
-        <div class="skill-tag">SQL</div>
-        <div class="skill-tag">JavaScript</div>
-        <div class="skill-tag">HTML & CSS</div>
-        <div class="skill-tag">Node.js</div>
-        <div class="skill-tag">Java</div>
-        <div class="skill-tag">C</div>
-        <div class="skill-tag">ASP .NET</div>
-        <div class="skill-tag">Pandas</div>
-        <div class="skill-tag">NumPy</div>
-        <div class="skill-tag">Matplotlib</div>
-        <div class="skill-tag">Data Analysis</div>
-        <div class="skill-tag">Data Cleaning</div>
-        <div class="skill-tag">Feature Engineering</div>
-        <div class="skill-tag">Machine Learning</div>
-        <div class="skill-tag">Jupyter Notebook</div>
-        <div class="skill-tag">Streamlit</div>
-        <div class="skill-tag">Git</div>
-        <div class="skill-tag">GitHub</div>
-        <div class="skill-tag">GitLab</div>
-        <div class="skill-tag">n8n</div>
+
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="category-title">Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">Python</div>
+            <div class="skill-tag">SQL</div>
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">Java</div>
+            <div class="skill-tag">C</div>
+            <div class="skill-tag">HTML & CSS</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">Frameworks & Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">Node.js</div>
+            <div class="skill-tag">ASP .NET</div>
+            <div class="skill-tag">Pandas</div>
+            <div class="skill-tag">NumPy</div>
+            <div class="skill-tag">Matplotlib</div>
+            <div class="skill-tag">Jupyter Notebook</div>
+            <div class="skill-tag">Streamlit</div>
+            <div class="skill-tag">n8n</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">Data Science</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">Data Analysis</div>
+            <div class="skill-tag">Data Cleaning</div>
+            <div class="skill-tag">Feature Engineering</div>
+            <div class="skill-tag">Machine Learning</div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="category-title">Version Control</h3>
+          <div class="skills-grid">
+            <div class="skill-tag">Git</div>
+            <div class="skill-tag">GitHub</div>
+            <div class="skill-tag">GitLab</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -374,11 +472,211 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Abbas Ali. Crafted with passion for data science & machine learning. <span style="color: var(--accent-primary);">✨</span></p>
+    <div class="footer-content">
+      <p>&copy; 2024 Abbas Ali. Crafted with passion for data science & machine learning. <span style="color: var(--accent-primary);">✨</span></p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/abbasali-sunasara-492300293/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+        <a href="https://github.com/Abbasali-Sunasara?tab=repositories" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="mailto:abbasalisunasara1234@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <!-- Enhanced JS for Scroll Reveal with Stagger Effects -->
   <script>
+    // Loading Screen
+    window.addEventListener('load', () => {
+      const loadingScreen = document.getElementById('loadingScreen');
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+      }, 1500);
+    });
+
+    // Custom Cursor
+    const customCursor = document.getElementById('customCursor');
+    const cursorTrail = document.getElementById('cursorTrail');
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+    let trailX = 0, trailY = 0;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      cursorX += (mouseX - cursorX) * 0.15;
+      cursorY += (mouseY - cursorY) * 0.15;
+      trailX += (mouseX - trailX) * 0.08;
+      trailY += (mouseY - trailY) * 0.08;
+
+      customCursor.style.left = cursorX - 10 + 'px';
+      customCursor.style.top = cursorY - 10 + 'px';
+      cursorTrail.style.left = trailX - 4 + 'px';
+      cursorTrail.style.top = trailY - 4 + 'px';
+
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Cursor hover effects
+    document.querySelectorAll('a, button, .project-card, .skill-tag').forEach(el => {
+      el.addEventListener('mouseenter', () => customCursor.classList.add('active'));
+      el.addEventListener('mouseleave', () => customCursor.classList.remove('active'));
+    });
+
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+    }
+
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      const isLight = document.body.classList.contains('light-mode');
+      localStorage.setItem('theme', isLight ? 'light' : 'dark');
+    });
+
+    // Mobile Menu
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenuToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // Time-based Greeting
+    function setGreeting() {
+      const hour = new Date().getHours();
+      const greetingText = document.getElementById('greetingText');
+      let greeting = 'Good Morning';
+
+      if (hour >= 12 && hour < 17) {
+        greeting = 'Good Afternoon';
+      } else if (hour >= 17) {
+        greeting = 'Good Evening';
+      }
+
+      greetingText.textContent = greeting;
+    }
+    setGreeting();
+
+    // Animated Counters
+    function animateCounters() {
+      const counters = document.querySelectorAll('.stat-number');
+      counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const duration = 2000;
+        const step = target / (duration / 16);
+        let current = 0;
+
+        const updateCounter = () => {
+          current += step;
+          if (current < target) {
+            counter.textContent = Math.floor(current);
+            requestAnimationFrame(updateCounter);
+          } else {
+            counter.textContent = target;
+          }
+        };
+
+        updateCounter();
+      });
+    }
+
+    // Trigger counter animation when stats section is visible
+    const statsSection = document.querySelector('.stats-section');
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounters();
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+
+    // 3D Tilt Effect on Cards
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = (y - centerY) / 10;
+        const rotateY = (centerX - x) / 10;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+      });
+    });
+
+    // Magnetic Button Effect
+    document.querySelectorAll('.magnetic-btn').forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+
+    // Active Navigation Highlighting
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
     // Respect prefers-reduced-motion
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     
