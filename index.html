@@ -16,12 +16,7 @@
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <button class="nav-menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primaryNavigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <div class="nav-container" id="primaryNavigation">
+    <div class="nav-container">
       <a href="#about" class="nav-link">About</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#projects" class="nav-link">Projects</a>
@@ -428,29 +423,6 @@
           });
         }
       });
-    });
-
-    // Compact navigation menu for smaller screens
-    const navMenuToggle = document.querySelector('.nav-menu-toggle');
-    const primaryNavigation = document.getElementById('primaryNavigation');
-    const closeNavigationMenu = () => {
-      document.querySelector('.navbar').classList.remove('menu-open');
-      navMenuToggle.setAttribute('aria-expanded', 'false');
-      navMenuToggle.setAttribute('aria-label', 'Open navigation menu');
-    };
-
-    navMenuToggle.addEventListener('click', () => {
-      const isOpen = document.querySelector('.navbar').classList.toggle('menu-open');
-      navMenuToggle.setAttribute('aria-expanded', String(isOpen));
-      navMenuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-    });
-
-    primaryNavigation.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', closeNavigationMenu);
-    });
-
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape') closeNavigationMenu();
     });
 
     // Scroll progress indicator
